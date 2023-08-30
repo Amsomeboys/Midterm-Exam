@@ -13,6 +13,8 @@ const styles = StyleSheet.create({
   imgTitle: {
     fontSize: 18,
     fontWeight: 'bold',
+    marginTop: 20,
+    marginBottom: 15,
   },
   imgSubTitle: {
     color: '#666',
@@ -24,7 +26,6 @@ const ImageSet = ({ source, onPress, style, title, subTitle, description }) => {
     <TouchableOpacity onPress={onPress} style={styles.imageContainer}>
       <Image source={source} style={[style, styles.image]} />
       <Text style={styles.imgTitle}>{title}</Text>
-      <Text style={styles.imgSubTitle}>{subTitle}</Text>
       <Text style={styles.imgSubTitle}>{description}</Text>
     </TouchableOpacity>
   );
